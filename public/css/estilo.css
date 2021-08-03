@@ -1,0 +1,698 @@
+:root {
+    --mine-dark-blue: #00A;
+    --mine-dark-green: #0A0;
+    --mine-dark-aqua: #0AA;
+    --mine-dark-red: #A00;
+    --mine-dark-gray: #555;
+    --mine-dark-purple: #A0A;
+    --mine-light-purple: #F5F;
+    --mine-blue: #55F;
+    --mine-green: #5F5;
+    --mine-aqua: #5FF;
+    --mine-red: #F55;
+    --mine-gray: #AAA;
+    --mine-gold: #FA0;
+    --mine-yellow: #FF5;
+    --red: #fa3e3e;
+    --green: #2ecc71;
+    --blue: #202945;
+    --cyan: #00B7C3;
+    --cyan-light: #00eeff;
+    --purple: #202945;
+    --pink: #E3008C;
+    --yellow: #f1c40f;
+    --orange: #f39c12;
+    --whatsapp: #25D366;
+    --facebook: #3b5999;
+    --twitter: #55acee;
+    --instagram: #f56040;
+    --yahoo: #410093;
+    --discord: #7289DA;
+    --youtube: #cd201f;
+    --spotify: #1ed760;
+    --github: #333;
+    --linkedin: #007bb5;
+    --mercadopago: #009EE3;
+    --pagseguro: #23BF37;
+    --paypal: #003087;
+    --light: #fff;
+    --light-2: #f3f7f9;
+    --light-3: #f8f8fa;
+    --light-4: #e9ecf8;
+    --light-5: #ececec;
+    --dark: #202945;
+    --dark-2: #1f283e;
+    --dark-3: #002350;
+    --dark-4: #00306f;
+    --dark-5: #003d8d;
+    --dye-primary: #1f285e;
+    --dye-secondary: #0007da;
+    --dye-third: #00058d;
+    --bootstrap: #530083;
+    --html: #d64000;
+    --css: #2965F1;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'GothanThin', sans-serif;
+    background-color: var(--dark);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+button:focus {
+    outline: 0px;
+}
+
+.Link {
+    background-color: transparent;
+    border: none;
+}
+
+.Link:focus {
+    outline: 0px;
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/content/public/css/fonts/MaterialIcons-Regular.eot");
+    /* For IE6-8 */
+    src: local("Material Icons"), local("MaterialIcons-Regular"), url("/content/public/css/fonts/MaterialIcons-Regular.woff2") format("woff2"), url("/content/public/css/fonts/MaterialIcons-Regular.woff") format("woff"), url("/content/public/css/fonts/MaterialIcons-Regular.ttg") format("truetype"); 
+}
+
+.mdi {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* Header */
+
+.header .navbar {
+    background-color: var(--dark-2);
+    padding: 30px 150px 30px 150px;
+}
+
+.header .navbar .brand .logo img {
+    height: 60px;
+}
+
+.header .navbar .buttons {
+    margin-left: auto;
+}
+
+.header .navbar .buttons .nav-item .nav-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .3s all ease-in-out;
+}
+
+.header .navbar .buttons .nav-item .nav-link:hover {
+    color: var(--mine-gray);
+}
+
+.header .navbar .buttons .nav-item .nav-link.cliente {
+    color: var(--mine-gray);
+    margin-top: -5px;
+    padding: 12px;
+    margin-left: 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    transition: .3s all ease-in-out;
+}
+
+.header .navbar .buttons .nav-item .nav-link.cliente:hover {
+    color: #000;
+}
+
+.header .hero {
+    margin: 200px 100px 200px 100px;
+}
+
+.header .hero .textos {
+    max-width: 600px;
+}
+
+.header .hero .textos .titulo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.header .hero .textos .btn-start {
+    background-color: #fff;
+    border-radius: 40px;
+    color: var(--dye-primary);
+    font-weight: 700;
+}
+
+.header .hero .textos .btn-start i {
+    border: 2px solid var(--dye-primary);
+    padding: 5px;
+    border-radius: 50%;
+}
+.btn-start {
+    background-color: #fff;
+    border-radius: 40px;
+    color: var(--dye-primary);
+    font-weight: 700;
+}
+
+.btn-start i {
+    border: 2px solid var(--dye-primary);
+    padding: 5px;
+    border-radius: 50%;
+}
+.header .hero .imagem {
+    height: 400px;
+    float: right;
+    margin-top: -300px;
+}
+
+/* Custom ScrollBar */
+
+body::-webkit-scrollbar {
+    width: 15px;
+    height: 0;
+    background-color: var(--dark-2);
+    overflow: visible
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--dye-primary);
+    border: 4px solid var(--dark-2);
+    border-radius: 50px
+}
+
+body::-webkit-scrollbar-button {
+    height: 0;
+    width: 0
+}
+
+/* Cards */
+
+.work {
+    padding: 100px;
+    margin-top: 80px;
+    background-color: var(--dark-2);
+}
+
+.cards[area="home"] {
+    margin-top: 50px;
+}
+
+.cards[area="home"] .card {
+    background-color: var(--dark);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.cards[area="home"] .card i {
+    font-size: 50px;
+}
+
+.cards[area="home"] .card .titulo {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: -10px;
+}
+
+
+.cards[area="home"] .card.bootstrap .titulo, .cards[area="home"] .card.bootstrap i {
+    color: var(--bootstrap)
+}
+.cards[area="home"] .card.discord .titulo, .cards[area="home"] .card.discord i {
+    color: var(--discord)
+}
+.cards[area="home"] .card.nodejs .titulo, .cards[area="home"] .card.nodejs i {
+    color: var(--mine-dark-green)
+}
+.cards[area="home"] .card.js .titulo, .cards[area="home"] .card.js i {
+    color: var(--yellow)
+}
+.cards[area="home"] .card.html .titulo, .cards[area="home"] .card.html i {
+    color: var(--html)
+}
+
+.cards[area="home"] .card.css .titulo, .cards[area="home"] .card.css i {
+    color: var(--css)
+}
+
+/* Titulos */
+
+section .titulos {
+    max-width: 700px;
+    text-align: center;
+}
+
+section .titulos .titulo {
+    color: var(--cyan-light);
+    font-size: 40px;
+    font-weight: 800;
+}
+section .titulos .titulo2 {
+    color: var(--cyan);
+    font-size: 20px;
+    align-items: center;
+    font-weight: 800;
+}
+
+section .titulos .desc {
+    color: var(--mine-gray);
+}
+
+/* project */
+
+.projects[area="home"] {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.projects[area="opensource"] {
+    margin-top: 300px;
+    margin-bottom: 100px;
+}
+
+.cards[area="project"] {
+    margin-top: 10px;
+}
+
+.cards[area="project"] .card {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--dark-2);
+    margin-top: 20px;
+}
+
+.cards[area="project"] .card .buttons {
+    margin-top: 10px;
+}
+
+.cards[area="project"] .card .buttons .btn-live {
+    background-color: var(--dye-primary);
+    color: #fff;
+    transition: .3s all ease-in-out;
+}
+
+.cards[area="project"] .card .buttons .btn-heart {
+    color: #fff;
+    background-color: var(--mine-red);
+    transition: .3s all ease-in-out;
+}
+
+.cards[area="project"] .card .buttons .btn-information {
+    background-color: #fff;
+    color: var(--dye-primary);
+    transition: .3s all ease-in-out;
+}
+
+.cards[area="project"] .card .buttons .btn-live:hover {
+    background-color: var(--dye-secondary);
+}
+
+.cards[area="project"] .card .buttons .btn-information:hover {
+    background-color: var(--mine-gray);
+}
+
+.cards[area="project"] .card .buttons .btn-heart:hover {
+    background-color: var(--mine-dark-red);
+}
+
+.cards[area="project"] .card .stars {
+    margin-top: 5px;
+    color: var(--mine-gold);
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--dark-2);
+    padding: 50px 150px 50px 150px;
+}
+
+.footer .row {
+    align-items: center;
+}
+
+.footer .row .col-md-4 {
+    text-align: center;
+}
+
+.footer .row .col-md-4 .buttons {
+    margin-top: 20px;
+}
+
+.footer .row .col-md-4 .buttons .btn {
+    color: #fff;
+    font-size: 30px;
+}
+
+.footer .developed {
+    margin-top: 20px;
+}
+
+/* Login Page */
+
+body[data-area="login"] {
+    overflow-x: hidden;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+body[data-area="login"] .container .row {
+    align-items: center;
+    margin-top: 200px;
+}
+
+body[data-area="login"] .container .row .col-md-6 .imagem {
+    height: 300px;
+    margin-left: 100px;
+}
+
+body[data-area="login"] .container .row .col-md-5 .card {
+    background-color: var(--dark-2);
+    padding: 20px;
+}
+
+body[data-area="login"] .container .row .col-md-5 .card .btn-login {
+    padding: 8px;
+    color: #fff;
+    background-color: var(--dye-primary);
+}
+
+body[data-area="login"] .container .row .col-md-5 .card .titulos .titulo {
+    color: var(--cyan-light);
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+body[data-area="login"] .container .row .col-md-5 .card .titulos .desc {
+    color: #fff;
+    font-size: 12px;
+}
+
+body[data-area="register"] {
+    overflow-x: hidden;
+    margin: 0;
+    margin-bottom: 80px;
+}
+
+body[data-area="register"] .container .row {
+    align-items: center;
+    margin-top: 100px;
+}
+
+body[data-area="register"] .container .row .col-md-6 .imagem {
+    height: 300px;
+    margin-left: 100px;
+}
+
+body[data-area="register"] .container .row .col-md-5 .card {
+    background-color: var(--dark-2);
+    padding: 20px;
+}
+
+body[data-area="register"] .container .row .col-md-5 .card .btn-register {
+    padding: 8px;
+    color: #fff;
+    background-color: var(--dye-primary);
+}
+
+body[data-area="register"] .container .row .col-md-5 .card .titulos .titulo {
+    color: var(--cyan-light);
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+body[data-area="register"] .container .row .col-md-5 .card .titulos .desc {
+    color: #fff;
+    font-size: 12px;
+}
+
+/* Client */
+
+.header[area="client"] {
+    background-color: var(--dye-primary);
+    position: relative;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+.header[area="client"] .navbar {
+    background-color: transparent;
+    padding: 30px 150px 30px 150px;
+    margin-bottom: 80px;
+}
+
+/* Client Info Cards */
+
+.cards[area="client-info"] {
+    margin-top: -250px;
+}
+
+.cards[area="client-info"] .card {
+    background-color: var(--dark-2);
+    padding: 20px;
+}
+
+.cards[area="client-info"] .card .row {
+    align-items: center;
+}
+
+.cards[area="client-info"] .card .col .info .titulo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #00FF00;
+    text-transform: uppercase;
+}
+
+.cards[area="client-info"] .card .col-md-4 .icon i {
+    font-size: 60px;
+}
+
+.cards[area="client-info"] .card.ranking .col .info .titulo {
+    color: var(--orange);
+}
+
+.cards[area="client-info"] .card.ranking .col-md-4 .icon i {
+    color: var(--orange);
+}
+
+.cards[area="client-info"] .card.money .col .info .titulo {
+    color: var(--mine-dark-green);
+}
+
+.cards[area="client-info"] .card.money .col-md-4 .icon i {
+    color: var(--mine-dark-green);
+}
+
+.cards[area="client-info"] .card.projects .col .info .titulo {
+    color: var(--cyan-light);
+}
+
+.cards[area="client-info"] .card.projects .col-md-4 .icon i {
+    color: var(--cyan-light);
+}
+
+.cards[area="client-info"] .card.money .col .info h5::before {
+    content: 'R$';
+    font-weight: 500;
+}
+
+/* Updates */
+
+.updates {
+    margin-top: 200px;
+}
+
+.cards[area="updates"] {
+    margin: 50px 200px 50px 200px;
+}
+
+.cards[area="updates"] .card {
+    padding: 20px;
+    background-color: var(--dark-2);
+}
+
+.cards[area="updates"] .card .cell {
+    border: 2px solid #888888;
+    padding: 10px 10px 0px 10px;
+    margin-top: 10px;
+}
+
+.cards[area="updates"] .card .cell .row {
+    align-items: center;
+}
+
+.cards[area="updates"] .card .cell .row .col .titulo {
+    color: var(--cyan-light);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cards[area="updates"] .card .cell .row .col-md-2 {
+    color: var(--mine-gray);
+}
+
+/* Infos */
+
+.cards[area="infos"] {
+    margin: 20px 200px 50px 200px;
+}
+
+.cards[area="infos"] .card {
+    padding: 20px;
+    background-color: var(--dark-2);
+}
+
+.cards[area="infos"] .card .titulo {
+    color: var(--cyan-light);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;  
+}
+
+.cards[area="infos"] .card .cell {
+    margin-top: 10px;
+}
+
+.cards[area="infos"] .card .cell .titulo {
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+/* MyProjects */
+
+.projects {
+    margin-bottom: 100px;
+}
+
+.cards[area="projects"] .card {
+    background-color: var(--dark-2);
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.cards[area="projects"] .card .row {
+    align-items: center;
+}
+
+.cards[area="projects"] .card .row:nth-child(1n) {
+    margin-top: 10px;
+}
+
+.cards[area="projects"] .card .row .col {
+    text-align: center;
+}
+
+.cards[area="projects"] .card .row .col .title {
+    color: #00FF00;
+    font-weight: 800;
+}
+
+.cards[area="projects"] .card .row .col .nota {
+    color: var(--mine-gold);
+}
+
+.cards[area="projects"] .card .row .col .btn-information {
+    background-color: #fff;
+    color: var(--dye-primary);
+    transition: .3s all ease-in-out;
+    margin-left: 5px;
+}
+
+.cards[area="projects"] .card .row .col .btn-download {
+    background-color: var(--dye-primary);
+    color: #fff;
+    transition: .3s all ease-in-out;
+    margin-left: 5px;
+}
+
+.cards[area="projects"] .card .row .col .btn-delete {
+    background-color: var(--mine-red);
+    color: #fff;
+    transition: .3s all ease-in-out;
+    margin-left: 5px;
+}
+
+.cards[area="projects"] .card form {
+    text-align: left;
+}
+
+.cards[area="projects"] .card form select option {
+    color: var(--mine-gold) !important;
+}
+
+.cards[area="projects"] .card .btn-submit {
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--mine-green);
+}
+
+/* Minha Conta */
+
+.cards[area="config"] {
+    margin-bottom: 50px;
+}
+
+.cards[area="config"] .card {
+    background-color: var(--dark-2);
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.cards[area="config"] .card .titulos .titulo {
+    color: var(--cyan-light);
+    font-weight: 900;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.cards[area="config"] .card .titulos .desc {
+    color: #fff;
+    font-size: 12px;
+}
+.titulos .titulov {
+    color: #00ff00;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.titulos .titulor {
+    color: #ff0000;
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.titulos .desc {
+    color: #fff;
+    font-size: 15px;
+}
+.cards[area="config"] .card .btn-submit {
+    padding: 8px;
+    color: #fff;
+    background-color: var(--dye-primary);
+}

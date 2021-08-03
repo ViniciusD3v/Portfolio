@@ -1,0 +1,54 @@
+@media screen and (max-width: 900px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .overflow {
+        display: none;
+    }
+
+    .header .navbar {
+        padding: 30px 20px 30px 20px;
+    }
+
+    .cards[area="updates"] {
+        margin: 50px 10px 50px 10px;
+    }
+
+    .cards[area="infos"] {
+        margin: 50px 10px 50px 10px;
+    }
+
+    .header[area="client"] .navbar {
+        background-color: transparent;
+        padding: 30px 20px 30px 20px;
+        margin-bottom: 80px;
+    }
+
+    .header .hero {
+        margin: 100px 20px 200px 20px;
+    }
+
+    .work {
+        padding: 20px;
+        margin-top: 80px;
+        background-color: var(--dark-2);
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+    .footer {
+        padding: 30px 30px 50px 30px;
+    }
+
+    .footer .row .col-md-8 .logo img {
+        display: none;
+    }
+    
+    .footer .row .col-md-4 {
+        margin-top: 30px;
+    }
+
+}
